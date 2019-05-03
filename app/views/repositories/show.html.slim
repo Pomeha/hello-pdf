@@ -1,0 +1,17 @@
+b Download
+table.table.table-bordered
+  th Place
+  th Nickname
+  th Download link
+  tr
+  - @pdfs.each_with_index do |pdf, index|
+    tr
+      td= index+1
+      td= @winners[index]
+      td= link_to 'Download', rails_blob_path(pdf, disposition: 'attachment')
+
+br
+.text-center
+  | Download all pdf right here
+  br
+  = link_to 'Download link', rails_blob_path(@archive, disposition: 'attachment')

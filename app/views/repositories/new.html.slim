@@ -1,0 +1,7 @@
+.d-flex.justify-content-center
+  h1 Just find your winners
+.d-flex.justify-content-center
+  = form_for @repository, url: { action: 'create' }, html: { class: 'form-buscar', role: 'form' } do |f|
+    = f.text_field :url, placeholder: 'Repository url'
+    = f.submit 'Search', class: 'btn btn-success'
+

@@ -39,6 +39,11 @@ gem 'dry-auto_inject'
 gem 'slim', '~> 4.0', '>= 4.0.1'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
+gem 'rest-client', '~> 2.0', '>= 2.0.2'
+gem 'pdfkit', '~> 0.8.4.1'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
+gem 'rubyzip', '~> 1.2', '>= 1.2.2'
 
 group :development, :test do
   gem 'dotenv-rails'

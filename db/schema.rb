@@ -37,7 +37,10 @@ ActiveRecord::Schema.define(version: 2019_05_03_060551) do
   end
 
   create_table "repositories", force: :cascade do |t|
-    t.string "url"
+    t.string "url", null: false
+    t.string "author", null: false
+    t.string "project", null: false
+    t.string "winners", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
